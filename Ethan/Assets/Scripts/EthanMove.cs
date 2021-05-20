@@ -23,14 +23,14 @@ public class EthanMove : MonoBehaviour
         animator.SetFloat("GiroCorrer", giro);
         animator.SetFloat("InicioCorrer", despl);
 
-        if (Input.GetKey("Jump"))
+        if (Input.GetButton("Fire3"))
             agachar = true;
         else agachar = false;
 
         if (agachar == false)
-            animator.SetBool("Jump", false);
+            animator.SetBool("Agacharse", false);
 
         if (agachar == true)
-            animator.SetBool("Jump", true);
+            animator.SetBool("Agacharse", true);
     }
 }
